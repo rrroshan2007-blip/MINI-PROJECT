@@ -1,83 +1,39 @@
-Prompt 1:
+Prompt 1 — Canvas foundation
 
-Design the structure of a menu-driven 2D Graphics Editor in C using a 2D character array as the canvas. The canvas should be initialized with '_' characters. Explain what data structures are required to store multiple graphical objects such as lines, rectangles, triangles, and circles.
+Create a C program that implements a 2D character grid canvas of size 25x60. Initialize it with '_' and print it with row and column indices.
 
-Prompt 2:
+Prompt 2 — Plot + display system
 
-Create C structures and an enum to represent different graphical objects (Line, Rectangle, Triangle, Circle). Each object should have a unique ID and an active/deleted status so that objects can be managed individually.
+Add a function plot(x,y) to safely mark a character '*' on a 2D canvas array, and modify the display function to render the grid properly.
 
-Prompt 3:
+Prompt 3 — Bresenham line algorithm
 
-Implement a canvas system using a 2D character array. Write functions to initialize the canvas with '_' and display the canvas with row and column coordinates for easier editing.
+Implement Bresenham’s line drawing algorithm in C using integer arithmetic to draw a line on the 2D character canvas.
 
-Prompt 4:
+Prompt 4 — Shape abstraction
 
-Implement a safe plotting function that places '*' on the canvas only if the coordinates are within bounds. Add boundary checking to avoid segmentation faults.
+Define a struct in C to store graphical objects with type (line, rectangle, triangle, circle), coordinates, radius, and active flag. Store multiple objects in an array.
 
-Prompt 5:
+Prompt 5 — Shape rendering system
 
-Implement Bresenham's Line Drawing Algorithm in C for drawing lines between any two points on the canvas. Use the plotting function for rendering.
+Write a function redrawAll() that clears the canvas and redraws all active objects from the object array using their respective drawing functions.
 
-Prompt 6:
+Prompt 6 — Rectangle and triangle
 
-Implement a rectangle drawing function using four line segments. The rectangle should be drawn using only '*' characters on the canvas border.
+Implement rectangle and triangle drawing functions using the existing line drawing function.
 
-Prompt 7:
+ Prompt 7 — Midpoint circle algorithm
 
-Implement a triangle drawing function by connecting three user-specified vertices using the line drawing algorithm.
+Implement midpoint circle drawing algorithm in C and integrate it into the shape rendering system.
 
-Prompt 8:
+Prompt 8 — Add object system
 
-Implement the Midpoint Circle Algorithm (Bresenham Circle Algorithm) to draw circles efficiently on the character canvas.
+Create a menu-driven function to add shapes (line, rectangle, triangle, circle) into an object array using user input.
 
-Prompt 9:
+Prompt 9 — Modify and delete system
 
-Create a render system that clears the canvas and redraws all active objects from an object list. This should allow future support for object deletion and modification without corrupting the drawing.
+Add functionality to delete and modify existing shapes by ID and automatically redraw the canvas after every change.
 
-Prompt 10:
+ Prompt 10 — Final integration
 
-Implement functions to list all active objects with their IDs and coordinates. The output should clearly display the object type and its parameters.
-
-Prompt 11:
-
-Implement an Add Object feature. Allow the user to choose Line, Rectangle, Triangle, or Circle and enter the required coordinates. Store the object in an array for future editing.
-
-Prompt 12:
-
-Implement a Delete Object feature. The user should select an object using its ID. The object should be marked inactive and the canvas should be re-rendered.
-
-Prompt 13:
-
-Implement a Modify Object feature. The user should select an object using its ID and update its coordinates or dimensions. Re-render the canvas after modification.
-
-Prompt 14:
-
-Create a robust integer input validation function that prevents crashes due to invalid user input and ensures values remain within valid canvas limits.
-
-Prompt 15:
-
-Design a clean menu-driven interface with the following options:
-
-1. Add Shape
-2. Delete Shape
-3. Modify Shape
-4. Display Canvas and Object List
-5. Exit
-
-Prompt 16:
-
-Integrate all previously generated modules into a single C program. Ensure modular design, proper comments, boundary checking, object management, redraw functionality, and menu-driven interaction.
-
-Prompt 17:
-
-Review the complete program and improve code quality by:
-
-* Adding comments for major functions
-* Improving readability
-* Handling edge cases
-* Ensuring no out-of-bounds access
-* Maintaining compatibility with standard C compilers
-
-Prompt 18:
-
-Generate the final complete source code as a single-file implementation named main.c that satisfies the assignment requirements for a menu-driven 2D Graphics Editor using a 2D character array canvas.
+Combine all features into a single menu-driven C program that supports adding, deleting, modifying, listing objects, and continuously redrawing a 2D ASCII graphics canvas.
