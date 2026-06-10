@@ -1,19 +1,15 @@
-# Test Cricket XI Selector
+2D Graphics Editor in C
 
-## Objective
-Select the best Test Playing XI from a 25-player squad.
+Features:
+- Character-based drawing canvas
+- Draw Line, Rectangle, Triangle and Circle
+- Add graphical objects
+- Delete graphical objects
+- Modify existing objects
+- Display canvas with coordinates
+- Object management using unique IDs
+- Bresenham Line Drawing Algorithm
+- Midpoint Circle Drawing Algorithm
+- Redraw pipeline for maintaining consistency
 
-## Features
-- Role-based selection
-- Pitch-aware team composition
-- Captain recommendation
-- Team strength analysis
-
-## Technologies
-- C Programming
-- GitHub
-
-## How to Run
-
-gcc main.c -o selector
-./selector
+Language: C
