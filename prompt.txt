@@ -1,0 +1,83 @@
+Prompt 1:
+
+Design the structure of a menu-driven 2D Graphics Editor in C using a 2D character array as the canvas. The canvas should be initialized with '_' characters. Explain what data structures are required to store multiple graphical objects such as lines, rectangles, triangles, and circles.
+
+Prompt 2:
+
+Create C structures and an enum to represent different graphical objects (Line, Rectangle, Triangle, Circle). Each object should have a unique ID and an active/deleted status so that objects can be managed individually.
+
+Prompt 3:
+
+Implement a canvas system using a 2D character array. Write functions to initialize the canvas with '_' and display the canvas with row and column coordinates for easier editing.
+
+Prompt 4:
+
+Implement a safe plotting function that places '*' on the canvas only if the coordinates are within bounds. Add boundary checking to avoid segmentation faults.
+
+Prompt 5:
+
+Implement Bresenham's Line Drawing Algorithm in C for drawing lines between any two points on the canvas. Use the plotting function for rendering.
+
+Prompt 6:
+
+Implement a rectangle drawing function using four line segments. The rectangle should be drawn using only '*' characters on the canvas border.
+
+Prompt 7:
+
+Implement a triangle drawing function by connecting three user-specified vertices using the line drawing algorithm.
+
+Prompt 8:
+
+Implement the Midpoint Circle Algorithm (Bresenham Circle Algorithm) to draw circles efficiently on the character canvas.
+
+Prompt 9:
+
+Create a render system that clears the canvas and redraws all active objects from an object list. This should allow future support for object deletion and modification without corrupting the drawing.
+
+Prompt 10:
+
+Implement functions to list all active objects with their IDs and coordinates. The output should clearly display the object type and its parameters.
+
+Prompt 11:
+
+Implement an Add Object feature. Allow the user to choose Line, Rectangle, Triangle, or Circle and enter the required coordinates. Store the object in an array for future editing.
+
+Prompt 12:
+
+Implement a Delete Object feature. The user should select an object using its ID. The object should be marked inactive and the canvas should be re-rendered.
+
+Prompt 13:
+
+Implement a Modify Object feature. The user should select an object using its ID and update its coordinates or dimensions. Re-render the canvas after modification.
+
+Prompt 14:
+
+Create a robust integer input validation function that prevents crashes due to invalid user input and ensures values remain within valid canvas limits.
+
+Prompt 15:
+
+Design a clean menu-driven interface with the following options:
+
+1. Add Shape
+2. Delete Shape
+3. Modify Shape
+4. Display Canvas and Object List
+5. Exit
+
+Prompt 16:
+
+Integrate all previously generated modules into a single C program. Ensure modular design, proper comments, boundary checking, object management, redraw functionality, and menu-driven interaction.
+
+Prompt 17:
+
+Review the complete program and improve code quality by:
+
+* Adding comments for major functions
+* Improving readability
+* Handling edge cases
+* Ensuring no out-of-bounds access
+* Maintaining compatibility with standard C compilers
+
+Prompt 18:
+
+Generate the final complete source code as a single-file implementation named main.c that satisfies the assignment requirements for a menu-driven 2D Graphics Editor using a 2D character array canvas.
